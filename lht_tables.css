@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 6
+   Case Problem 3
+
+   Calendar Style Sheet
+   Author: Trent Peterson
+   Date:   12.11.18
+
+   Filename:   lht_tables.css
+
+*/
+
+/* ===============================
+   Mobile Styles: 0px to 640px 
+   ===============================
+*/
+@media only screen and (max-width:640px) {
+
+    table,
+    tbody,
+    tr,
+    td,
+    th,
+    caption {
+        display: block;
+    }
+
+    thead h1 {
+        display: none;
+    }
+
+    caption {
+        color: white;
+        background-color: rgb(100, 100, 100);
+        font-size: 1.5em;
+        line-height: 2em;
+    }
+
+    td {
+        border: 1px dotted grey;
+        color: rgb(11, 12, 145);
+        position: relative;
+        padding-left: 40%;
+        min-height: 40px;
+    }
+
+    tr:nth-of-type(1),
+    tr:nth-of-type(3),
+    tr:nth-of-type(5) {
+        background-color: rgb(255, 235, 178);
+        border: 2px solid gray;
+    }
+}
+
+/* =============================================
+   Tablet and Desktop Styles: greater than 640px
+   =============================================
+*/
