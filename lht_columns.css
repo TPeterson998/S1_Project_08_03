@@ -16,3 +16,15 @@
 
 
 /* Column Styles */
+/* This sets up the article as a three column layout with a gap and a split line */
+article {
+    column-width: 260px;
+    column-gap: 20px;
+    column-rule: 1px solid rgb(154, 64, 31);
+    widows: 2;
+    orphans: 2;
+}
+
+article h1 {
+    column-span: all;
+}
